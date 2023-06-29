@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<RelativeLayout
+    android:id="@+id/rel1"
+    android:layout_height="87dp"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_height="86dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prikeytxt"
+        android:text=""
+        android:visibility="invisible"/>
+    <ImageView
+        android:layout_height="35dp"
+        android:layout_width="35dp"
+        android:id="@+id/thumbnail_image"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/text_rel"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/thumbnail_image"
+        android:layout_toLeftOf="@id/active_image"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/recycle_title"
+            android:textSize="16dp"
+            tools:text="Title"
+            android:textColor="@color/colorPrimary"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/recycle_date_time"
+            android:textSize="13dp"
+            tools:text="Date and Time"
+            android:textColor="@color/colorPrimary"
+            android:ellipsize="marquee"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/recycle_repeat_info"
+            android:textSize="13dp"
+            tools:text="Repeat No and Type"
+            android:textColor="@color/colorPrimary"
+            android:ellipsize="marquee"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:id="@+id/active_image"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/action_popupmenus"
+        android:src="@drawable/ic_baseline_notifications_off"
+        app:tint="@color/colorPrimary"/>
+    <ImageButton
+        android:layout_height="30dp"
+        android:layout_width="15dp"
+        android:id="@+id/action_popupmenus"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/baseline_more_vert_24"
+        android:layout_alignParentEnd="true"
+        app:tint="@color/colorPrimary"/>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/toolbar_dropshadow"
+        ></RelativeLayout>
+</RelativeLayout>

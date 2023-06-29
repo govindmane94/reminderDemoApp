@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#800080</color>
+    <color name="colorPrimaryDark">#800080</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="yellow"> #DAF7A6 </color>
+    <color name="pink">#FFB6C1</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="darkbrown">#900C3F</color>
+
+    <color name="textColor">#800080</color>
+    <color name="errorColor">#FFFFFFFF</color>
+    <color name="golden">#FFD700</color>
+</resources>
